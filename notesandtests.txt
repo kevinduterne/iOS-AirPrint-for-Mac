@@ -78,7 +78,7 @@ dns-sd -R "Canon MP270 series @ MacbookPro" _ipp._tcp,_universal . 631 txtvers=1
 dns-sd -R "Canon MP270 series @ MacbookPro" _ipp._tcp,_universal . 631 txtvers=1 qtotal=1 rp=printers/Canon_MP270_series ty=Unknown adminurl=https://MacbookPro.local.:631/printers/Canon_MP270_series note= priority=0 product=\(Canon\ MP270\ series\) transparent=T binary=T Fax=F Color=T pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/urf URF=W8,SRGB24,CP255,RS300
 
 
-
+dns-sd -R "Photosmart Premium C309g-m [8ABDED] @ xmini2" _ipp._tcp,_universal . 631 txtvers=1 qtotal=1 rp=/printers/Photosmart%20Premium%20C309g-m%20%5B8ABDED%5D ty=Unknown adminurl=https://xmini.local.:631/printers/Photosmart_Premium_C309g_m__8ABDED_ note= priority=0 product=\(Photosmart\ Premium\ C309g-m_BT\) URF=W8,CP1,RS300-600,DM3,SRGB24 pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster,image/urf UUID=105ff670-4b78-3d2e-42ab-404167075df8 TLS=1.2 Color=T Scan=T printer-state=3 printer-type=0x480901E transparent=T binary=T 
 
 
 dns-sd -L "$i" _ipp._tcp local | grep 'product=' | sed "s@\\@@g" | sed "s/'/ /g" | sed "s@pwg-raster@urf  URF=W8,SRGB24,CP255,RS300@g " > "$i".txt & sleep 1
