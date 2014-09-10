@@ -20,6 +20,7 @@
 #  Find URF string for different devices
 #  Add Install Launchd enabler
 #  Add Remove Install Launchd enabler
+#  Check cups.conf fo changes ( Or list printers to file and check changes)
 ##
 
 ## Notes
